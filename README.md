@@ -1,1 +1,1 @@
-# vidcoin
+# vidcoin code would be here
