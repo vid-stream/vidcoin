@@ -7,15 +7,15 @@ import sbt._
 
 enablePlugins(sbtdocker.DockerPlugin, JavaServerAppPackaging, JDebPackaging, SystemdPlugin, GitVersioning)
 
-name := "waves"
-organization := "com.wavesplatform"
+name := "vidcoin"
+organization := "com.vid-stream"
 git.useGitDescribe := true
 git.uncommittedSignifier := Some("DIRTY")
 scalaVersion in ThisBuild := "2.12.4"
 crossPaths := false
 publishArtifact in (Compile, packageDoc) := false
 publishArtifact in (Compile, packageSrc) := false
-mainClass in Compile := Some("com.wavesplatform.Application")
+mainClass in Compile := Some("com.vid-stream.Application")
 scalacOptions ++= Seq(
   "-feature",
   "-deprecation",
